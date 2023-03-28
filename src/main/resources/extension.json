@@ -1,0 +1,14 @@
+{
+  "entrypoint": "tech.shiftmc.lobby.LobbyExtension",
+  "name": "LobbyExtension",
+  "version": "1.0.0",
+  "dependencies": [],
+  "externalDependencies": {
+    "repositories": [
+      { "name": "Central", "url": "https://repo1.maven.org/maven2/" }
+    ],
+    "artifacts": [
+    
+    ]
+  }
+}
