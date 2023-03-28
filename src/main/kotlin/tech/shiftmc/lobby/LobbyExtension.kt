@@ -1,11 +1,17 @@
 package tech.shiftmc.lobby
 
 import net.minestom.server.extensions.Extension
-import org.tinylog.kotlin.Logger
+import tech.shiftmc.lobby.modules.loadAllModules
 
 class LobbyExtension : Extension() {
+    
+    companion object {
+        lateinit var instance: LobbyExtension
+    }
+    
     override fun initialize() {
-        Logger.info { "LobbyExtension has been initialized!" }
+        loadAllModules()
+        instance = this
     }
     
     override fun terminate() { }
