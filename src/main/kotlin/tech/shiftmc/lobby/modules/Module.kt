@@ -9,6 +9,7 @@ internal interface Module {
 fun loadAllModules() {
     val modules = listOf(
         DoubleJumpModule(),
+        StackerModule(),
     )
     
     modules.forEach {
